@@ -1,0 +1,22 @@
+# Zonasi routing definition
+zonasi.settings_tab:
+  route_name: zonasi.settings
+  title: 'Settings'
+  base_route: zonasi.settings
+
+entity.zonasi.canonical:
+  route_name: entity.zonasi.canonical
+  base_route: entity.zonasi.canonical
+  title: 'View'
+
+entity.zonasi.edit_form:
+  route_name: entity.zonasi.edit_form
+  base_route: entity.zonasi.canonical
+  title: 'Edit'
+
+entity.zonasi.delete_form:
+  route_name:  entity.zonasi.delete_form
+  base_route:  entity.zonasi.canonical
+  title: Delete
+  weight: 10
+

@@ -1,0 +1,19 @@
+add zonasi entities:
+  title: 'Create new Zonasi entities'
+
+administer zonasi entities:
+  title: 'Administer Zonasi entities'
+  description: 'Allow to access the administration form to configure Zonasi entities.'
+  restrict access: true
+
+delete zonasi entities:
+  title: 'Delete Zonasi entities'
+
+edit zonasi entities:
+  title: 'Edit Zonasi entities'
+
+view published zonasi entities:
+  title: 'View published Zonasi entities'
+
+view unpublished zonasi entities:
+  title: 'View unpublished Zonasi entities'

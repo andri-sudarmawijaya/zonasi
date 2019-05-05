@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains zonasi.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function zonasi_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the zonasi module.
+    case 'help.page.zonasi':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Zonasi siswa terhadap sekolah') . '</p>';
+      return $output;
+
+    default:
+  }
+}

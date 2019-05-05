@@ -1,0 +1,22 @@
+{#
+/**
+ * @file zonasi.html.twig
+ * Default theme implementation to present Zonasi data.
+ *
+ * This template is used when viewing Zonasi pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_zonasi()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('zonasi') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

@@ -1,0 +1,14 @@
+{
+  "name": "drupal/zonasi",
+  "type": "drupal-module",
+  "description": "Zonasi siswa terhadap sekolah",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/zonasi",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/zonasi",
+    "source": "http://cgit.drupalcode.org/zonasi"
+  },
+  "require": { }
+}

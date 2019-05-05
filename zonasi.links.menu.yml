@@ -1,0 +1,14 @@
+
+# Zonasi menu items definition
+entity.zonasi.collection:
+  title: 'Zonasi list'
+  route_name: entity.zonasi.collection
+  description: 'List Zonasi entities'
+  parent: system.admin_structure
+  weight: 100
+
+zonasi.admin.structure.settings:
+  title: 'Zonasi settings'
+  description: 'Configure Zonasi entities'
+  route_name: zonasi.settings
+  parent: system.admin_structure

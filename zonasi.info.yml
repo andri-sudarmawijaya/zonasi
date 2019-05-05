@@ -1,0 +1,9 @@
+name: 'Zonasi'
+type: module
+description: 'Zonasi siswa terhadap sekolah'
+core: 8.x
+package: 'PPDB'
+dependencies:
+dependencies:
+  - views
+  - jenis_sekolah
