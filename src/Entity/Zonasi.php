@@ -195,7 +195,7 @@ class Zonasi extends ContentEntityBase implements ZonasiInterface {
       ->setRequired(TRUE);
 
     $fields['machine_name'] = BaseFieldDefinition::create('string')
-      ->setLabel(t('Machine namd'))
+      ->setLabel(t('Machine name'))
       ->setDescription(t('The machine_name of the Zonasi entity.'))
       ->setSettings([
         'max_length' => 50,
@@ -276,5 +276,4 @@ class Zonasi extends ContentEntityBase implements ZonasiInterface {
 
     return $fields;
   }
-
 }

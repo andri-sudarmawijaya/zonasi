@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * Implements hook_install().
+ *
+ * Creates some default entries on this module custom table.
+ *
+ * @see hook_install()
+ *
+ * @ingroup simulasi
+ */
+use Drupal\zonasi\Entity\Zonasi;
+
+function zonasi_install() {
+  // Insert some example data into our schema.
+
+  $entries = [
+	['id' => '11', 'jenis_sekolah' => '10', 'name' => 'Satu Desa', 'machine_name' => 'satu_desa', 'score' => '90'],
+	['id' => '12', 'jenis_sekolah' => '10', 'name' => 'Satu Kecamatan', 'machine_name' => 'satu_kecamatan', 'score' => '80'],
+	['id' => '13', 'jenis_sekolah' => '10', 'name' => 'Satu Kabupaten', 'machine_name' => 'satu_kabupaten', 'score' => '70'],
+	['id' => '14', 'jenis_sekolah' => '10', 'name' => 'Satu Provinsi', 'machine_name' => 'satu_provinsi', 'score' => '40'],
+	['id' => '15', 'jenis_sekolah' => '10', 'name' => 'Luar Provinsi', 'machine_name' => 'luar_provinsi', 'score' => '0'],
+
+	['id' => '31', 'jenis_sekolah' => '20', 'name' => 'Satu Desa', 'machine_name' => 'satu_desa', 'score' => '90'],
+	['id' => '32', 'jenis_sekolah' => '20', 'name' => 'Satu Kecamatan', 'machine_name' => 'satu_kecamatan', 'score' => '70'],
+	['id' => '33', 'jenis_sekolah' => '20', 'name' => 'Satu Kabupaten', 'machine_name' => 'satu_kabupaten', 'score' => '60'],
+	['id' => '34', 'jenis_sekolah' => '20', 'name' => 'Satu Provinsi', 'machine_name' => 'satu_provinsi', 'score' => '30'],
+	['id' => '35', 'jenis_sekolah' => '20', 'name' => 'Luar Provinsi', 'machine_name' => 'luar_provinsi', 'score' => '0'],
+
+  ];
+  
+  foreach ($entries as $entry) {
+	$entry['user_id'] = '1'; 
+    $zonasi = Zonasi::create($entry);
+	
+	$zonasi->save();
+  }
+}
